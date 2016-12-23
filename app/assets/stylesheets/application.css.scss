@@ -20,22 +20,19 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-.home-callout, .navbar-static-top{
+.navbar, .home-callout{
   /*Gradient provided by @_ighosh at uiGradients.com*/
-  background: #E8B7D2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #E8B7D2 , #BB377D); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #E8B7D2 , #BB377D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: 'Comfortaa', cursive;
-  color: #3EEAFE;
-  margin: -20px;
-  padding-top: 15px;
-  padding-bottom: 25px;
+  background: #41295a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #41295a , #2F0743); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #41295a , #2F0743); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.navbar-header, .navbar-right{
+.navbar-default .navbar-nav > li > a, .navbar-right > li > a, .navbar-default .navbar-brand{
+  font-family: 'Comfortaa', cursive;
+  color: #6F8F00;
   font-size: 18px;
-  a{
-    color: #3EEAFE;
+  .navbar-default .navbar-brand{
+    font-weight: 700;
   }
 }
 
@@ -45,6 +42,32 @@ h1 {
 
 .nav > li > a:hover, .nav > li > a:focus, .navbar-header:hover {
   background: transparent;
-  opacity: .5;
+  opacity: .75;
 }
 
+.navbar{
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand:hover, {
+  background: transparent;
+  opacity: .5;
+  color: #6F8F00;
+}
+
+.home-callout {
+  margin-top: -20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-family: 'Comfortaa', cursive;
+  border-bottom: 10px solid #6F8F00;
+  color: #6F8F00;
+}
+
+h2 {
+  font-family: 'Comfortaa', cursive;
+}
+
+h2 + p {
+  font-family: 'Ubuntu', 'sans-serif';
+}
