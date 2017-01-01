@@ -33,12 +33,16 @@ gem 'font-awesome-sass', '~> 4.6.2'
 # Use HIRB for improved console database
 gem 'hirb', '0.7.3'
 
+# Use Devise for user authentication
+gem 'devise', '4.2.0'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
@@ -47,6 +51,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '2.0.0'
 end
+
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
   gem 'pg', '0.18.4'
